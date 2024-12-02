@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+   animation: all ease-in-out 0.3s;
+}
+
+.active {
+   background-color: #00ABE4;
+   color: white;
+   border: 1px solid white;
+}
+
+.inactive {
+   background-color: white;
+   color: #00ABE4;
+}
+
+.navlink img {
+   width: 18px;
+}
+
+.banner {
+   background: url(C:\x_code\Jasa_ku\frontend\public\assets\hero.png);
+   height: 450px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 14px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero .banner .content {
+   border: none;
+}
+
+.categories .row .col {
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   border-radius: 5px;
+   font-weight: 500;
+   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.categories .row .col p {
+   margin-top: 10px;
+   font-size: 13px;
+}
+
+.categories .row .col img {
+   height: 22px;
+}
+
+.popular-service .box {
+   padding: 7px;
+}
+
+.popular-service .box p {
+   font-size: 12px;
+   margin: 8px 0 12px;
+   font-weight: 500;
+   padding-left: 5px;
+}
+
+.popular-service .box {
+   width: 200px;
+   border-radius: 9px;
+   color: white;
+}
+
+.popular-service .row {
+   scroll-snap-type: x mandatory;
+}
+
+.show {
+   display: block;
+}
+
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   font-size: 13px;
+}
+
+.dropdown-content a:hover {
+   background-color: #00ABE4;
+   color: white;
+}
+
+.footer .row .col a {
+   font-size: 13px;
+   color: white;
+}
+
+.gigs .addGigs {
+   border: 1px dashed black;
+}
+
+.gigs .addGigs img {
+   width: 50px;
+   height: 50px;
+}
+
+.gig .row img {
+   width: 100px;
+   height: 100px;
+}
+
+.orderBtn {
+   border: 1px solid black;
+}
+
+.boxAddImage {
+   border: 1px dashed black;
+}
+
+/* Carousel */
+.mySlides {
+   display: none;
+   transition: transform 1s ease;
+}
+
+.slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade {
+   from {
+      opacity: .4
+   }
+
+   to {
+      opacity: 1
+   }
+}
+
+.userDetail {
+   border: 1px solid #cacaca;
+}
+
+.slideshow-container .image1,
+.image2 {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#bglogin {
+   background-image: url('../../public/assets/bg3.png');
+   background-size: cover;
+   background-position: center;
+}
+
+#formlogin {
+   background-color: rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(10px);
+}
+
+#bglogin2 {
+   background-image: url('../../public/assets/bg4.jpg');
+   width: 400px;
+   height: 500px;
+   background-position: center;
+   background-size: cover;
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
+}
+
+#bgregis2 {
+   background-image: url('../../public/assets/bg4.jpg');
+   width: 300px;
+   height: 500px;
+   background-position: center;
+   background-size: cover;
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
+   display: flex;
+   align-items: center;
+}
+
+#bgregis {
+   background-image: url('../../public/assets/bg5.png');
+   background-position: center;
+   background-size: cover;
+}
+
+#formregis {
+   background-color: rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(10px);
+}
+
+#potoProfile {
+   width: 150px;
+   height: 150px;
+   background-size: cover;
+   background-position: center;
+}
+
+#seeAll-btn {
+   border: 1px solid #004aad;
+   color: #004aad;
+}
+
+#seeAll-btn:hover {
+   background-color: #004aad;
+   color: white;
+   border: 1px solid white;
+}
+
+#user-image {
+   height: 60px;
+   width: 60px;
+   background-position: center;
+   background-size: cover;
+}
+
+#bg-content {
+   background-color: rgba(255, 255, 255, 0.3);
+}
